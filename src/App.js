@@ -1,25 +1,20 @@
-import { Container } from 'semantic-ui-react';
-import MyNavbar from './components/MyNavbar';
-import Logo from './components/Logo';
-import Body from './components/Body';
-import Selection from './components/Selection';
-import GoBtn from './components/GoBtn';
-import ImgInsrt from './components/Image';
-import HeaderExampleImage from './components/Header';
+import Home from './pages/Home/Home';
+import {Switch, Route } from 'react-router-dom';
+import Login from './pages/Home/Login';
+import Register from './pages/Home/Register';
+import Dashboard from './pages/Dasboard/Dashboard';
 
 
-function App(){
-  return(
-    <Container>
-    <HeaderExampleImage/>
-    <ImgInsrt/>
-      <MyNavbar />
-     <Logo/>
-     <Body/>
-     <GoBtn/>
-    </Container>
 
-  )
+function App() {
+  return (
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/register" component={Register} />
+      <Route exact path="/dashboard" component={Dashboard} />
+    </Switch>
+  );
 }
 
 export default App;
