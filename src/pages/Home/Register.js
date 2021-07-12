@@ -32,7 +32,9 @@ export default function Register(){
 				    	<label className="form-check-label">Remember me</label>
 				  	</div>
 				  	<hr/>
+					  <Link to="/detailsadded">
 					<button type="submit" className="btn btn-success float-right">Register</button>
+					</Link>
 					<p className="text-center mt-2 mb-0 float-left">If you have account <Link to="/login" className="text-success">Sign In</Link></p>
 				</form>
 			</div>

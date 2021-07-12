@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import "./Body.css";
 export default function Body() {
     return (
@@ -34,9 +35,21 @@ function Section1() {
                                         <option>Teacher</option>
                                     </Form.Control>
                                 </Form.Group>
-                                <Button variant="success" type="submit" size="lg" >
+                               <Link to="/AllStudents"> <Button variant="success" type="submit" size="lg" >
                                     Let's Enter!
                                 </Button>
+                                </Link><hr/>
+                                <Link to="/login"> <Button variant="secondary" className="text-white" type="submit" size="lg" >
+                                    Login Here!
+                                </Button>
+                                              
+                                </Link> &nbsp;  &nbsp;  or &nbsp;  &nbsp;
+                                <Link to="/register"> <Button variant="warning" className="text-white" type="submit" size="lg" >
+                                    Register Here!
+                                </Button>
+                                              
+                                </Link> 
+                               
                             </Col>
                         </Row>
                     </Form>

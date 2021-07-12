@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { Link } from 'react-router-dom';
 import './login.css'
 export default function Login () {
   return (
@@ -43,7 +44,7 @@ export default function Login () {
                                         </div>
 
                                         <div className="col-12">
-                                            <button type="submit" className="btn btn-primary px-4 float-end mt-4">login</button>
+                                            <Link to="/teacher/dashboard"><button type="submit" className="btn btn-primary px-4 float-end mt-4">login</button></Link>
                                         </div>
                                 </form>
                             </div>

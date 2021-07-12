@@ -8,6 +8,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import FacultyFaqs from './components/FacultyFaqs';
 import StdFaqs from './components/StdFaqs';
+import DetailsAdded from './pages/Home/DetailsAdded';
+
 
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/facultyfaqs" component={FacultyFaqs} />
       <Route exact path="/StdFaqs" component={StdFaqs} />
+      <Route exact path="/AllStudents" component={AllStudents} />
+      <Route exact path="/teacher/dashboard" component={Dashboard} />
+      <Route exact path="/detailsadded" component={DetailsAdded} />
 
     </Switch>
   );
